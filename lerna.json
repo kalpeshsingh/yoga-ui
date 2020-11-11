@@ -4,6 +4,8 @@
   ],
   "version": "independent",
   "command": {
+    "ignoreChanges": ["*.md"],
+    "message": "chore(release): publish new version",
     "publish": {
       "allowBranch": "master"
     }
