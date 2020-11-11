@@ -11,11 +11,6 @@
     "commit": "cz",
     "lint": "eslint 'packages/**/*.{js,ts,tsx}' --quiet --fix"
   },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --fix"
-    ]
-  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
