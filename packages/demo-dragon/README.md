@@ -1,4 +1,4 @@
-# Demo Dragon (1.0.0)
+# Demo Dragon (0.1.0)
 
 A demo package to show capabilities of Yoga UI. Usually for internal consumption.
 
