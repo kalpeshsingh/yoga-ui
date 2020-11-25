@@ -1,54 +1,65 @@
 {
-    "name": "@yoga-ui/root",
-    "version": "0.0.0",
-    "description": "Yoga UI is an open source design system for dev community to build side projects quickly",
-    "repository": "git@github.com:kalpeshsingh/yoga-ui.git",
-    "author": "Kalpesh Singh",
-    "license": "MIT",
-    "keywords": [
-        "react",
-        "components",
-        "yoga",
-        "ui",
-        "design system",
-        "side project"
-    ],
-    "engines": {
-        "node": ">=12.14.1",
-        "yarn": ">=1.22.10"
-    },
-    "contributors": [
-        {
-            "name": "Kalpesh Singh",
-            "url": "https://github.com/kalpeshsingh"
-        }
-    ],
-    "private": true,
-    "workspaces": [
-        "packages/*"
-    ],
-    "scripts": {
-        "commit": "cz",
-        "lint": "eslint 'packages/**/*.{js,ts,tsx}' --quiet --fix"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^11.0.0",
-        "@commitlint/config-conventional": "^11.0.0",
-        "@types/node": "^14.14.9",
-        "@types/react": "^17.0.0",
-        "@typescript-eslint/eslint-plugin": "^4.7.0",
-        "@typescript-eslint/parser": "^4.7.0",
-        "commitizen": "^4.2.2",
-        "cz-conventional-changelog": "^3.3.0",
-        "eslint": "^7.13.0",
-        "eslint-config-prettier": "^6.15.0",
-        "eslint-plugin-jsx-a11y": "^6.4.1",
-        "eslint-plugin-prettier": "^3.1.4",
-        "eslint-plugin-react": "^7.21.5",
-        "husky": "^4.3.0",
-        "lerna": "^3.22.1",
-        "lint-staged": "^10.5.1",
-        "prettier": "^2.1.2",
-        "typescript": "^4.0.5"
+  "name": "@yoga-ui/root",
+  "version": "0.0.0",
+  "description": "Yoga UI is an open source design system for dev community to build side projects quickly",
+  "repository": "git@github.com:kalpeshsingh/yoga-ui.git",
+  "author": "Kalpesh Singh",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "components",
+    "yoga",
+    "ui",
+    "design system",
+    "side project"
+  ],
+  "engines": {
+    "node": ">=12.14.1",
+    "yarn": ">=1.22.10"
+  },
+  "contributors": [
+    {
+      "name": "Kalpesh Singh",
+      "url": "https://github.com/kalpeshsingh"
     }
+  ],
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "commit": "cz",
+    "lint": "eslint 'packages/**/*.{js,ts,tsx}' --quiet --fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@storybook/addon-a11y": "^6.1.2",
+    "@storybook/addon-actions": "^6.1.2",
+    "@storybook/addon-essentials": "^6.1.2",
+    "@storybook/addon-links": "^6.1.2",
+    "@storybook/react": "^6.1.2",
+    "@types/node": "^14.14.9",
+    "@types/react": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "babel-loader": "^8.2.1",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.0",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "^4.0.5"
+  }
 }
