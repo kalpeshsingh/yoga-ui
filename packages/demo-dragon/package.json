@@ -14,5 +14,9 @@
   ],
   "directories": {
     "lib": "dist"
+  },
+  "scripts": {
+    "test": "jest --coverage --config ../../jest.config.js",
+    "test:watch": "jest --watch --config ../../jest.config.js"
   }
 }

@@ -7,13 +7,15 @@ module.exports = {
             jsx: true, // Allows for the parsing of JSX
         },
     },
-    plugins: ['jsx-a11y'],
+    plugins: ['testing-library', 'jest-dom', 'jsx-a11y'],
     settings: {
         react: {
             version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
         },
     },
     extends: [
+        'plugin:testing-library/react',
+        'plugin:jest-dom/recommended',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
         'plugin:jsx-a11y/recommended',
